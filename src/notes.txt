@@ -1,0 +1,108 @@
+#main-content{
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 10px 10px 0;
+}
+
+#main-content .card1{
+  width: calc(33.333% - 6.66px); /* (width-20px)*0.33 = width*0.33 - 20*0.33 */
+}
+
+#main-content .card2{
+  width: calc(33.333% - 6.66px); /* (width-10px)*0.33 = width*0.33 - 10*0.33 */
+}
+
+#main-content .card1, #main-content .card2{
+  padding: 10px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgb(180, 179, 179);
+}
+
+#main-content h3{
+  margin: 5px 0;
+}
+
+#main-content button {
+  width: 130px;
+  padding: 0 5px 0 10px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(20, 139, 194);
+  border: 1px solid rgb(20, 139, 194);
+}
+
+#main-content button i{
+  padding-top: 2px;
+  font-size: 30px;
+}
+
+#main-content .banner{
+  padding: 10px;
+  width: calc(66.666% - 3.33px); /* (width-10px)*0.66 = width*0.66 - 10*0.666 */
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  /* background: url(/banner-bg.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#main-content .banner p{
+  width: 50%;
+}
+
+#main-content .banner button{
+  color: white;
+  background: rgb(20, 139, 194);
+  border: 1px solid white;
+}
+
+/*  MainContent
+            <div className='card1'>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat nostrum inventore</p>
+                <button><span>Get started</span> <i className="bi bi-arrow-right-short"></i></button>
+            </div>
+            <div className='card1'>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat nostrum inventore</p>
+                <button><span>Get started</span> <i className="bi bi-arrow-right-short"></i></button>
+            </div>
+            <div className='card1'>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat nostrum inventore</p>
+                <button><span>Get started</span> <i className="bi bi-arrow-right-short"></i></button>
+            </div>
+
+            <div className='banner' style={{ backgroundImage: 'url(' + img + ')' }}>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat nostrum inventore</p>
+                <button><span>Get started</span> <i className="bi bi-arrow-right-short"></i></button>
+            </div>
+            <div className='card2'>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat nostrum inventore</p>
+                <button><span>Get started</span> <i className="bi bi-arrow-right-short"></i></button>
+            </div>
+
+            <div className='card2'>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat nostrum inventore</p>
+                <button><span>Get started</span> <i className="bi bi-arrow-right-short"></i></button>
+            </div>
+            <div className='banner' style={{ backgroundImage: 'url(' + img + ')' }}>
+                <h3>Title</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat nostrum inventore</p>
+                <button><span>Get started</span> <i className="bi bi-arrow-right-short"></i></button>
+            </div>
+
+*/

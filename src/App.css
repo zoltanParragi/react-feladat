@@ -1,0 +1,221 @@
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* nav */
+nav {
+  width: 100%;
+  display: flex;
+  padding: 3px;
+  background: rgb(39, 39, 39);
+  color: white;
+}
+
+nav div {
+  width: 33.333%;
+}
+
+nav>#brand {
+  display: flex;
+  align-items: center;
+}
+
+nav>#search>input {
+  width: calc(100% - 28px);
+  height: 100%;
+  padding: 0 5px;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+  outline: none;
+}
+nav>#search>i {
+  height: calc(100% - 2px);
+  border-top: 2px solid grey;
+  border-right: 2px solid grey;
+  border-bottom: 2px solid grey;
+  border-radius: 0 8px 8px 0px;
+}
+
+nav i {
+  display: inline-block;
+  padding: 5px 5px 7px 5px;
+}
+
+nav div:last-child {
+  text-align: right;
+}
+
+/* sidebar */
+#sidebar{
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#sidebar i {
+  margin-bottom: 10px;
+  font-size: 120%;
+}
+
+/* mobile sidebar */
+#mobile-sidebar {
+  display: none;
+  justify-content: flex-end;
+  flex: 1;
+  position: relative;
+  padding: 10px;
+  color: white;
+  background: rgb(39, 39, 39);
+}
+
+#mobile-sidebar>ul {
+  list-style: none;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  width: 180px;
+  background: rgb(39, 39, 39);
+}
+
+#mobile-sidebar>ul>li {
+  padding: 10px;
+}
+
+#mobile-sidebar>ul>li:hover {
+  background: rgb(80, 80, 80);
+}
+
+#mobile-sidebar>ul>li:not(:first-child) {
+  border-top: 1px solid rgb(24, 24, 24);
+}
+
+#mobile-sidebar>ul>li span{
+  padding: 10px;
+  font-style: normal;
+}
+
+/* main content */
+main{
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+main>.card {
+  width: 33.333%;
+  padding: 5px;
+  height: 150px;
+}
+
+main>.card>.card-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgb(180, 179, 179);
+}
+
+main>.card>.card-content>h3{
+  margin: 5px 0;
+}
+
+main button {
+  width: 130px;
+  padding: 0 5px 0 10px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main>.card>.card-content>button {
+  color: rgb(20, 139, 194);
+  border: 1px solid rgb(20, 139, 194);
+}
+
+main button i{
+  padding-top: 2px;
+  font-size: 30px;
+}
+
+main>.banner {
+  width: 66.666%;
+  padding: 5px;
+  height: 150px;
+}
+
+main>.banner>.banner-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  color: white;
+  /* background: url(/banner-bg.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main>.banner>.banner-content> p{
+  width: 50%;
+}
+
+main>.banner>.banner-content>button{
+  color: white;
+  background: rgb(20, 139, 194);
+  border: 1px solid white;
+}
+
+@media (max-width: 992px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav div:last-child {
+    text-align: center;
+  }
+
+  nav>#brand{
+    display: block;
+    text-align: center;
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  #mobile-sidebar {
+    display: flex;
+  }
+
+  main{
+    justify-content: space-around;
+  }
+
+  main .banner, main .card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {  
+  main .banner, main .card {
+    width: 100%;
+  }
+}
+
+
+
